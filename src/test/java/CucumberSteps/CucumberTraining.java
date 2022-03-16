@@ -6,6 +6,8 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
+import java.sql.Statement;
+
 public class CucumberTraining {
 
     int currentAccount;
@@ -35,5 +37,9 @@ public class CucumberTraining {
         System.out.println("currentAccount=" + currentAccount);
         System.out.println("savingAccount=" + savingAccount);
 
+    }
+    @And("Statement appear {string}")
+    public void statement(String hodor){
+        System.out.println(hodor);
     }
 }
